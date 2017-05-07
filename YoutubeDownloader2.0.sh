@@ -6,7 +6,7 @@
 # 	WAVE-OF-GOOD-NOISE='https://www.youtube.com/playlist?list=PLFzLqHBrhKEQ4onVRx4v6CXhIPe4X1IRv'
 # 	ED-SHEERAN='https://www.youtube.com/playlist?list=PLjp0AEEJ0-fGi7bkjrGhBLUF9NMraL9cL'
 #	TAYLOR-DAVIS='https://www.youtube.com/playlist?list=UUk40qSGYnVdFFBNXRjrvdpQ'
-#	GUITAR='https://www.youtube.com/playlist?list=PLDA9D1565D754CC80'
+#	GUITAR-OSAMURAISAN='https://www.youtube.com/playlist?list=PLDA9D1565D754CC80'
 
 
 ##Initialisation:
@@ -164,8 +164,8 @@ while read line; do
 	echo -e "${LRED}Downloading(${curline}/${nblines}):${GREEN} $title${NOCOLOR}"
 	mkdir -p "$dlPath/tmp"
 	cd "$dlPath/tmp"
-	#	downloadingVideo $line
-		downloadingAudio $line
+	#	downloadingVideo $line | grep -E '[ffmpeg]|[download]'
+		downloadingAudio $line | grep -E '[ffmpeg]|[download]'
 	oldname=`ls`
     del="-${line##https://www.youtube.com/watch?v=}"
     newName="${oldname/$del/}"
@@ -177,9 +177,8 @@ done <list.txt
 
 # removing list.txt & /tmp
 echo "Removing temporary files..."
-list=${dlPath}/list.txt;
-rm $list
-rmdir ${dlPath}/tmp
+cd ..
+rm -rf list.txt tmp/
 sleep 1
 
 ## Well that's all
