@@ -1,6 +1,5 @@
 #!/bin/bash
 # @title: SIMPLE BASH FOR youtube-dl
-# FOR EDUCATION PURPOSE
 # chmod +x to execute
 # some playlists:
 # 	WAVE-OF-GOOD-NOISE='https://www.youtube.com/playlist?list=PLFzLqHBrhKEQ4onVRx4v6CXhIPe4X1IRv'
