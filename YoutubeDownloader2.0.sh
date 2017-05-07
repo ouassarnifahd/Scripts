@@ -6,6 +6,8 @@
 # 	WAVE-OF-GOOD-NOISE='https://www.youtube.com/playlist?list=PLFzLqHBrhKEQ4onVRx4v6CXhIPe4X1IRv'
 # 	ED-SHEERAN='https://www.youtube.com/playlist?list=PLjp0AEEJ0-fGi7bkjrGhBLUF9NMraL9cL'
 #	TAYLOR-DAVIS='https://www.youtube.com/playlist?list=UUk40qSGYnVdFFBNXRjrvdpQ'
+#	GUITAR='https://www.youtube.com/playlist?list=PLDA9D1565D754CC80'
+
 
 ##Initialisation:
 #Global variables
