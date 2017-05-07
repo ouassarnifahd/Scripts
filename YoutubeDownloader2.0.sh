@@ -106,7 +106,7 @@ fi
 
 # Help/Usage exit:
 if [[ $# -lt 2 ]]; then
-	echo "usage: $0 [-OPTIONS] ... (OPTIONAL: -d <download_directory>)"
+	echo "usage: `basename $0` [-OPTIONS] ... (OPTIONAL: -d <download_directory>)"
 	echo "OPTIONS: 	[-url] <youtube_video_url>"
 	echo "		[-pl]  <youtube_playlist_url>"
 	echo "		[-txt] <youtube_text_file> (must contain youtube video urls only)"
