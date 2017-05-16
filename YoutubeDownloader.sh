@@ -145,11 +145,11 @@ cd "$dlPath"
 
 # downloading functions (youtube-dl)
 function downloadingAudio {
-	youtube-dl --no-warnings --extract-audio --audio-format mp3 $1 | grep -E '[ffmpeg]|[download]'
+	youtube-dl --no-warnings --extract-audio --audio-format mp3 $1 
 }
 
 function downloadingVideo {
-	youtube-dl $1 --no-warnings --recode-video mp4 | grep -E '[ffmpeg]|[download]'
+	youtube-dl $1 --no-warnings --recode-video mp4
 }
 
 function getTitle {
